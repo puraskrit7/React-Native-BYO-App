@@ -3,8 +3,8 @@ import Icon from "@expo/vector-icons/MaterialCommunityIcons";
 import { ScrollView, TouchableOpacity } from "react-native-gesture-handler";
 import { View, Text, Image, ImageBackground, TextInput } from "react-native";
 
-export default class Home extends React.Component {
-  render() {
+export default function Home(props) {
+  
     return (
       <ImageBackground
         source={require("../images/back.png")}
@@ -70,7 +70,7 @@ export default class Home extends React.Component {
             style={{ marginRight: -40, marginTop: 30 }}
           >
             <TouchableOpacity
-              onPress={() => this.props.navigation.navigate("Detail")}
+              onPress={() => props.navigation.navigate("Detail")}
               style={{
                 alignItems: "center",
                 justifyContent: "center",
@@ -97,7 +97,7 @@ export default class Home extends React.Component {
                 marginHorizontal: 22,
               }}
             >
-              <Icon name="office-building" color="white" size={32} />
+              <Icon name="office-building" color="cyan" size={32} />
             </View>
 
             <View
@@ -269,5 +269,5 @@ export default class Home extends React.Component {
         </View>
       </ImageBackground>
     );
-  }
+  
 }

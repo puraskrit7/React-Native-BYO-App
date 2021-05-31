@@ -1,8 +1,8 @@
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 
-export default class ListCard extends React.Component {
-  render() {
+export default function ListCard () {
+
     return (
       <View
         style={{
@@ -131,5 +131,5 @@ export default class ListCard extends React.Component {
         </View>
       </View>
     );
-  }
+  
 }

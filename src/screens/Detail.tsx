@@ -4,8 +4,8 @@ import Icon from "@expo/vector-icons/MaterialCommunityIcons";
 import ListCard from "./ListCard";
 import { ScrollView } from "react-native-gesture-handler";
 
-export default class Detail extends React.Component {
-  render() {
+export default function Detail () {
+
     return (
       <View
         style={{ height: "100%", width: "100%", backgroundColor:"green" }}
@@ -124,5 +124,5 @@ export default class Detail extends React.Component {
         </ScrollView>
       </View>
     );
-  }
+  
 }
